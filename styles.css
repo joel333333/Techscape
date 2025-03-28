@@ -1,0 +1,607 @@
+body {
+    background-color: #eaecee;
+    font-family: "Kanit", sans-serif;
+}
+
+.indutry-body {
+    background: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fdedec;
+}
+
+header img {
+    width: 100px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+header h1 {
+    color: #283747;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 25px;
+    color: #283747;
+    font-size: 1.2rem;
+}
+
+.menu-bar {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar a:hover {
+    color: #000000;
+}
+
+.hero-section {
+    background-color: #d4efdf;
+}
+
+.hero-section {
+    padding: 20px;
+    width: 100%;
+    height: 570px;
+}
+
+#hero {
+    top: 100px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+
+.overview-participants {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.overview {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 450px;
+    background-color: #abebc6;
+    border-radius: 15px;
+    padding: 50px;
+}
+
+.overview ul li {
+    margin-top: 20px;
+}
+
+.participants {
+    align-content: end;
+}
+
+.participants table tr td {
+    padding: 10px;
+}
+
+.navbar.show {
+    display: flex;
+    margin-top: 30px;
+    box-shadow: 0 0 5px;
+    justify-content: center;
+    width: 100%;
+}
+
+@media(max-width: 420px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: whitesmoke;
+        top: 60px;
+        left: 0%;
+    }
+
+    .menu-bar {
+        display: block;
+    }
+
+    .participants table tr td {
+        padding: 3px;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .overview {
+        display: flex;
+        flex-direction: row;
+        width: 350px;
+        height: 450px;
+        background-color: #28b463;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-section {
+        height: 720px;
+    }
+
+    .participants {
+        padding-top: 20px;
+        margin-left: 0;
+    }
+
+    #share {
+        width: 100px;
+        height: 300px;
+    }
+
+    #app-intell {
+        height: 250px;
+    }
+    #app-indus{
+        height: 250px;
+    }
+    #app-park {
+        height: 250px;
+    }
+}
+
+/* css for nagivations into industry, innovation and infrasructure */
+
+.navigations {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 4px;
+}
+
+.navigate-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #ebdef0;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #ebdef0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 25px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigate-content button a {
+    text-decoration: none;
+    color: #fdedec;
+}
+
+.navigate-content:nth-child(3) p {
+    font-size: 1.2rem;
+}
+
+.navigations .navigate-content button {
+    padding: 10px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    background-color: #28b463;
+    color: #ebdef0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #eafaf1;
+    padding-top: 30px;
+}
+
+.service-side {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.service-side a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+}
+
+.service-side a:hover {
+    text-decoration: underline;
+}
+
+.copy-wrights {
+    text-align: center;
+    font-size: small;
+    padding-top: 50px;
+    background-color: #eafaf1;
+}
+
+/* industry page styling properties starts form here */
+header .industry-heading {
+    text-align: center;
+}
+.apple-industry{
+    background-image: url(industry-bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+}
+.card-1 {
+    margin: 10px 0;
+}
+#infographic {
+    padding: 20px;
+    background-color: #e5e8e8;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.info-para {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 0.8rem;
+    padding: 5px;
+}
+
+#market-value {
+    padding: 20px;
+    background-color: #e5e8e8;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.capital-para {
+    font-size: 0.8rem;
+    padding: 5px;
+}
+
+.first-iphone {
+    background-color: #e5e8e8;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 10px;
+    padding: 5px;
+}
+
+/* Steeve jobs image styling */
+
+.info-para img {
+    width: 270px;
+    height: 350px;
+    box-shadow: 0 0 5px;
+    padding: 5px;
+    margin: 4px;
+}
+
+.info {
+    padding: 10px;
+}
+
+/* styles for innnovations page */
+.apple-intelligence {
+    background-image: url(https://www.apple.com/v/iphone-16-pro/f/images/overview/welcome/hero_apple_intelligence_headline__fwxxapju9a6i_xlarge_2x.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+}
+header h1 {
+    font-size: 2rem;
+}
+/* From Uiverse.io by satyamchaudharydev */
+/* === removing default button style ===*/
+.button {
+    margin-bottom: 20px;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* button styling */
+.button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(73, 58, 58, 0.6);
+    --animation-color: #ff3766;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+/* this is the text, when you hover on button */
+.hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+}
+
+/* hover */
+.button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+.inno h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+    box-shadow: 0 0 5px;
+    padding: 15px 0;
+}
+
+.explore-ai {
+    width: 100%;
+    margin: 60px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* From Uiverse.io by eslam-hany */
+.book {
+    position: relative;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    -webkit-transform: preserve-3d;
+    -ms-transform: preserve-3d;
+    transform: preserve-3d;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #000;
+    padding: 20px;
+    margin: 20px;
+}
+
+iframe {
+    border-radius: 5px;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+.cover {
+    top: 0;
+    position: absolute;
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 3px #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.book:hover .cover {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-180deg);
+    -ms-transform: rotatey(-180deg);
+    transform: rotatey(-180deg);
+}
+
+
+.feedback {
+    padding: 30px 0;
+}
+.book-contents {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.book-contents img {
+    border-radius: 5px;
+    width: 100%;
+
+}
+
+.book-contents h4 {
+    font-size: 1.4rem;
+}
+
+
+.book-contents p {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+.key-feature h5 {
+    font-size: 1.4rem;
+}
+
+
+/* styles for infrastructure page starts from here */
+
+.apple-park {
+    background-image: url(apple-park.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+}
+
+#app-park h2 {
+    font-size: 2rem;
+    width: 100%;
+    text-shadow: 2px 2px 4px #193b28; 
+    position: absolute;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#forms {
+    padding: 50px;
+}
+
+#forms h2{
+    font-size: 1.5rem;
+}
+
+.carousel-inner img{
+    width: 400px;
+    height: 500px;
+}
+
+.slide-photos {
+    margin: 30px;
+}
+
+/* From Uiverse.io by alexruix */ 
+.infras-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    border: 1px solid beige;
+    box-shadow: 0 0 5px;
+    width: 100%;
+    margin: 10px 0;
+    justify-content: space-around;
+}
+.card {
+    
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+   }
+   
+   .card-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+   }
+   
+   .card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+   }
+   
+   .text-body {
+    color: rgb(134, 134, 134);
+   }
+   
+   /*Text*/
+   .text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+   }
+   
+   /*Hover*/
+   .card:hover {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+   }
+   
+   .card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
+
+   .apple-enterprise-centers h1 {
+    font-size: 2rem;
+    padding: 15px;
+    text-align: center;
+    text-shadow: 0 0 5px;
+   }
+
+

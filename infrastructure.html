@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infrastructure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/assets/Apple logo white and black.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofadi+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Apple Infrastruture</h1>
+        <div class="menu-bar" onclick="togglemenu()"> ☰</div>
+        <div class="navbar" id="navbar">
+            <a href="industry.html">Industry</a>
+            <a href="innovation.html">Innovation</a>
+            <a href="index.html">Home</a>
+        </div>
+    </header>
+    <div class="apple-park" id="app-park">
+        <h2>APPLE PARK</h2>
+    </div>
+    <div class="apple-enterprise-centers">
+        <h1>Apple enterprise Centers</h1>
+    </div>
+    <div class="infras-content">
+        <!-- From Uiverse.io by alexruix --> 
+        <div class="card">
+            <div class="card-details">
+                <p class="text-title">Apple Park - Cupertino</p>
+                <p class="text-body">
+                    • 2.8 million square feet campus<br>
+                    • Houses up to 12,000 employees<br>
+                    • 100% renewable energy powered<br>
+                    • Worlds largest naturally ventilated building<br>
+                    • Steve Jobs Theater with 1,000-seat capacity
+                </p>
+            </div>
+            <button class="card-button" onclick="window.open('https://www.apple.com/apple-park/', '_blank')">Learn More</button>
+        </div>
+    
+        <!-- Data Centers Card -->
+        <div class="card">
+            <div class="card-details">
+                <p class="text-title">Global Data Centers</p>
+                <p class="text-body">
+                    • Maiden, North Carolina (iCloud East)<br>
+                    • Mesa, Arizona (Command Center)<br>
+                    • Prineville, Oregon<br>
+                    • Reno, Nevada<br>
+                    • All centers use 100% renewable energy
+                </p>
+            </div>
+            <button class="card-button" onclick="window.open('https://www.apple.com/environment/', '_blank')">View Details</button>
+        </div>
+    
+        <!-- Manufacturing Facilities Card -->
+        <div class="card">
+            <div class="card-details">
+                <p class="text-title">Manufacturing & R&D</p>
+                <p class="text-body">
+                    • Austin, Texas Campus (15,000 employees)<br>
+                    • California Design Centers<br>
+                    • Seattle AI & ML Research Center<br>
+                    • Boston Chip Design Facility<br>
+                    • Multiple International Production Hubs
+                </p>
+            </div>
+            <button class="card-button" onclick="window.open('https://www.apple.com/job-creation/', '_blank')">Explore More</button>
+        </div>
+        <!-- Add these cards after your existing cards -->
+
+<!-- Research & Development Card -->
+<div class="card">
+    <div class="card-details">
+        <p class="text-title">R&D Centers</p>
+        <p class="text-body">
+            • Seattle - AI & Machine Learning Hub<br>
+            • Pittsburgh - Robotics Research<br>
+            • San Diego - Wireless Tech Center<br>
+            • Cambridge - AI & Chip Design<br>
+            • Cork, Ireland - European R&D Hub
+        </p>
+    </div>
+    <button class="card-button" onclick="window.open('https://www.apple.com/careers/us/teams/software-and-services.html', '_blank')">Discover More</button>
+</div>
+
+<!-- Retail Infrastructure Card -->
+<div class="card">
+    <div class="card-details">
+        <p class="text-title">Retail Network</p>
+        <p class="text-body">
+            • 500+ Apple Stores Worldwide<br>
+            • Fifth Avenue NYC Flagship Store<br>
+            • Marina Bay Sands Singapore<br>
+            • Apple Tower Theatre LA<br>
+            • Renewable Energy Powered Stores
+        </p>
+    </div>
+    <button class="card-button" onclick="window.open('https://www.apple.com/retail/', '_blank')">Find Stores</button>
+</div>
+
+<!-- Supply Chain Card -->
+<div class="card">
+    <div class="card-details">
+        <p class="text-title">Supply Chain Network</p>
+        <p class="text-body">
+            • Global Operations Center - China<br>
+            • Irish Operations Hub - Cork<br>
+            • Distribution Centers Worldwide<br>
+            • Green Supply Chain Initiative<br>
+            • Advanced Logistics Network
+        </p>
+    </div>
+    <button class="card-button" onclick="window.open('https://www.apple.com/supplier-responsibility/', '_blank')">Learn More</button>
+</div>
+    </div>
+    <hr>
+    <div class="slide-photos">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://i.pinimg.com/736x/0f/ea/f2/0feaf263004afbde8cf849223d0d380c.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-dark"><b>Apple BKC</b></h5>
+                  <p class="text-white">Apple's first indain store was opened in 18 th April 2023. At jio world drive mall in bandra kurla complex Mumbai</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2017-08/23/full/1503436207-9481.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="silde-text text-dark"><b>icloud head quaters</b></h5>
+                  <p class="silde-text text-dark">Large headquaters to maintain the data in <b>apple</b>, <b>$1b</b> To build, <b>100%</b>Renewable energy</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.pinimg.com/736x/b8/45/60/b8456072eff51e97851e5bac8e4f968f.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="silde-text text-white">Austin Campus</h5>
+                  <p class="silde-text text-white">3 million Square feet, engineering and operations, 15,000+ employees, $1 billion Investments</p>
+                </div>
+              </div>
+              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <form id="forms">
+        
+
+            <div class="border-b border-gray-900/10 pb-12">
+                <h2 class="text-base/7 font-semibold text-gray-900">Personal Information</h2>
+                <p class="mt-1 text-sm/6 text-gray-600">Use a permanent address where you can receive mail.</p>
+
+                <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                    <div class="sm:col-span-3">
+                        <label for="first-name" class="block text-sm/6 font-medium text-gray-900">First name</label>
+                        <div class="mt-2">
+                            <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+                                class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                        </div>
+                    </div>
+
+                    <div class="sm:col-span-3">
+                        <label for="last-name" class="block text-sm/6 font-medium text-gray-900">Last name</label>
+                        <div class="mt-2">
+                            <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                                class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                        </div>
+                    </div>
+
+                    <div class="sm:col-span-4">
+                        <label for="email" class="block text-sm/6 font-medium text-gray-900">Email address</label>
+                        <div class="mt-2">
+                            <input id="email" name="email" type="email" autocomplete="email"
+                                class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                        </div>
+                    </div>
+
+                    <div class="sm:col-span-3">
+                        <label for="country" class="block text-sm/6 font-medium text-gray-900">Country</label>
+                        <div class="mt-2 grid grid-cols-1">
+                            <select id="country" name="country" autocomplete="country-name"
+                                class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                                <optgroup label="East Asia">
+                                    <option>Select Country</option>
+                                    <option>China</option>
+                                    <option>Japan</option>
+                                    <option>South Korea</option>
+                                    <option>North Korea</option>
+                                    <option>Taiwan</option>
+                                    <option>Mongolia</option>
+                                </optgroup>
+                                <optgroup label="South Asia">
+                                    <option>India</option>
+                                    <option>Pakistan</option>
+                                    <option>Bangladesh</option>
+                                    <option>Sri Lanka</option>
+                                    <option>Nepal</option>
+                                    <option>Bhutan</option>
+                                    <option>Maldives</option>
+                                </optgroup>
+                                <optgroup label="Southeast Asia">
+                                    <option>Indonesia</option>
+                                    <option>Thailand</option>
+                                    <option>Vietnam</option>
+                                    <option>Malaysia</option>
+                                    <option>Philippines</option>
+                                    <option>Singapore</option>
+                                    <option>Myanmar</option>
+                                    <option>Cambodia</option>
+                                    <option>Laos</option>
+                                    <option>Brunei</option>
+                                </optgroup>
+                                <optgroup label="West Asia">
+                                    <option>Saudi Arabia</option>
+                                    <option>UAE</option>
+                                    <option>Qatar</option>
+                                    <option>Kuwait</option>
+                                    <option>Oman</option>
+                                    <option>Bahrain</option>
+                                    <option>Yemen</option>
+                                </optgroup>
+                                <optgroup label="Central Asia">
+                                    <option>Kazakhstan</option>
+                                    <option>Uzbekistan</option>
+                                    <option>Kyrgyzstan</option>
+                                    <option>Tajikistan</option>
+                                    <option>Turkmenistan</option>
+                                </optgroup>
+                            </select>
+                            <svg class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4"
+                                viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+                                <path fill-rule="evenodd"
+                                    d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="col-span-full">
+                        <label for="street-address" class="block text-sm/6 font-medium text-gray-900">Street
+                            address</label>
+                        <div class="mt-2">
+                            <input type="text" name="street-address" id="street-address" autocomplete="street-address"
+                                class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                        </div>
+                    </div>
+
+                    <div class="sm:col-span-2 sm:col-start-1">
+                        <label for="city" class="block text-sm/6 font-medium text-gray-900">City</label>
+                        <div class="mt-2">
+                            <input type="text" name="city" id="city" autocomplete="address-level2"
+                                class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                        </div>
+                    </div>
+
+                    <div class="sm:col-span-2">
+                        <label for="region" class="block text-sm/6 font-medium text-gray-900">State / Province</label>
+                        <div class="mt-2">
+                            <input type="text" name="region" id="region" autocomplete="address-level1"
+                                class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                        </div>
+                    </div>
+
+                    <div class="sm:col-span-2">
+                        <label for="postal-code" class="block text-sm/6 font-medium text-gray-900">ZIP / Postal
+                            code</label>
+                        <div class="mt-2">
+                            <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code"
+                                class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-6 flex items-center justify-end gap-x-6">
+            <button type="button" class="text-sm/6 font-semibold text-gray-900">Cancel</button>
+            <button type="submit"
+                class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Save</button>
+        </div>
+    </form>
+
+    <div class="footer">
+        <div class="service-side">
+            <h5>Shop</h5>
+            <div class="service-side">
+                <a href="https://www.apple.com/mac/" target="_blank">Mac</a>
+                <a href="https://www.apple.com/ipad/">ipad</a>
+                <a href="https://www.apple.com/iphone/">iphone</a>
+                <a href="https://www.apple.com/apple-vision-pro/">Vision</a>
+            </div>
+        </div>
+        <div class="service-side">
+            <h5>Store</h5>
+            <a href="https://www.apple.com/retail/" target="_blank">Find a store</a>
+            <a href="https://www.apple.com/today/camp/" target="_blank">Camp</a>
+            <a href="https://www.apple.com/today/" target="_blank">Apple today</a>
+            <a href="https://www.apple.com/shop/help" target="_blank">Shopping help</a>
+        </div>
+        <div class="service-side">
+            <h5>About</h5>
+            <a href="https://www.apple.com/newsroom/" target="_blank">news</a>
+            <a href="https://investor.apple.com/investor-relations/default.aspx" target="_blank">Investors</a>
+            <a href="https://www.apple.com/apple-events/">Events</a>
+            <a href="https://www.apple.com/contact/" target="_blank">Contact Apple</a>
+        </div>
+    </div>
+    <div class="copy-wrights">
+        &copy; All Wrights Reserved. designed & developed by Joel & Abishek
+    </div>
+    <script src="/frontend/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
