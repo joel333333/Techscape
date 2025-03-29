@@ -178,7 +178,7 @@
                     <div class="sm:col-span-3">
                         <label for="first-name" class="block text-sm/6 font-medium text-gray-900">First name</label>
                         <div class="mt-2">
-                            <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+                            <input required type="text" name="first-name" id="first-name" autocomplete="given-name"
                                 class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
                         </div>
                     </div>
@@ -186,7 +186,7 @@
                     <div class="sm:col-span-3">
                         <label for="last-name" class="block text-sm/6 font-medium text-gray-900">Last name</label>
                         <div class="mt-2">
-                            <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                            <input required type="text" name="last-name" id="last-name" autocomplete="family-name"
                                 class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
                         </div>
                     </div>
@@ -194,7 +194,7 @@
                     <div class="sm:col-span-4">
                         <label for="email" class="block text-sm/6 font-medium text-gray-900">Email address</label>
                         <div class="mt-2">
-                            <input id="email" name="email" type="email" autocomplete="email"
+                            <input required id="email" name="email" type="email" autocomplete="email"
                                 class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
                         </div>
                     </div>
@@ -202,7 +202,7 @@
                     <div class="sm:col-span-3">
                         <label for="country" class="block text-sm/6 font-medium text-gray-900">Country</label>
                         <div class="mt-2 grid grid-cols-1">
-                            <select id="country" name="country" autocomplete="country-name"
+                            <select required id="country" name="country" autocomplete="country-name"
                                 class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
                                 <optgroup label="East Asia">
                                     <option>Select Country</option>
@@ -264,7 +264,7 @@
                         <label for="street-address" class="block text-sm/6 font-medium text-gray-900">Street
                             address</label>
                         <div class="mt-2">
-                            <input type="text" name="street-address" id="street-address" autocomplete="street-address"
+                            <input required type="text" name="street-address" id="street-address" autocomplete="street-address"
                                 class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
                         </div>
                     </div>
@@ -272,15 +272,15 @@
                     <div class="sm:col-span-2 sm:col-start-1">
                         <label for="city" class="block text-sm/6 font-medium text-gray-900">City</label>
                         <div class="mt-2">
-                            <input type="text" name="city" id="city" autocomplete="address-level2"
+                            <input required type="text" name="city" id="city" autocomplete="address-level2"
                                 class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
                         </div>
                     </div>
 
                     <div class="sm:col-span-2">
-                        <label for="region" class="block text-sm/6 font-medium text-gray-900">State / Province</label>
+                        <label for="region" class="block text-sm/6 font-medium text-gray-900">State</label>
                         <div class="mt-2">
-                            <input type="text" name="region" id="region" autocomplete="address-level1"
+                            <input required type="text" placeholder="state" name="region" id="region" autocomplete="address-level1"
                                 class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
                         </div>
                     </div>
@@ -289,7 +289,7 @@
                         <label for="postal-code" class="block text-sm/6 font-medium text-gray-900">ZIP / Postal
                             code</label>
                         <div class="mt-2">
-                            <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code"
+                            <input required type="text" name="postal-code" id="postal-code" autocomplete="postal-code"
                                 class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
                         </div>
                     </div>
